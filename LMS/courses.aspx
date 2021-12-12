@@ -22,7 +22,7 @@
         <nav>
             <ul id="MenuItems">
                 <li><a href="index.aspx">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="about.aspx">About</a></li>
                 <li><a href="courses.aspx">Courses</a></li>
                 <li><a href="Registration.aspx">Registration</a></li>
                 <li><a href="portal.aspx">Portal</a></li>
