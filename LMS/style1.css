@@ -1,0 +1,66 @@
+body{
+    margin:0;
+    padding:0;
+    background-image: url('images/dawood.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+}
+
+.login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 360px;
+    height: 410px;
+    background-color: rgb(0,0,0,.8);
+    color: seashell;
+    box-sizing: border-box;
+    padding: 30px;
+    border-radius: 20px;
+  
+}
+.logo{
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    top: -60px;
+    left: 110px;
+}
+.login p{
+    margin: 0px;
+    padding: 0 0 20px  ;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+.login input{
+    border: none;
+    border-bottom:3px solid ghostwhite ;
+    outline: none;
+    background: transparent;
+    height: 30px;
+    box-sizing: border-box;
+    color: seashell;
+   
+}
+button{
+    outline: none;
+    border: none;
+    height: 40px;
+    border-radius:20px;
+    background-color: tomato;
+    font-size: 20px;
+    color: wheat;
+}
+.login input,button{
+    width: 100%;
+    margin-bottom: 20px;
+    
+
+}
+button:hover{
+    background: red;
+}

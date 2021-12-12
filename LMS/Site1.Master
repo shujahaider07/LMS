@@ -1,0 +1,384 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="LMS.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+    <title>Red Store | Ecommerce Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="header">
+        <div class="container">
+    <div class="navbar">
+        <div class="logo">
+           <a href="index.aspx"><img src="images/image1.png" width="125px"></a>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.aspx">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.aspx">Courses</a></li>
+                <li><a href="registration.aspx">Registration</a></li>
+                <li><a href="Portal.aspx">Portal</a></li>
+             
+            </ul>
+        </nav>
+        
+
+    </div>
+    <div class="row">
+        <div class="col-2">
+           <h1>The Mind Once Enlightened<br> Can't Again Become Dark</h1>
+           <p>Online Learning is rapidly becoming one of the most cost-effective <br> ways to educate world rapidly expanding workforce</p>
+            
+        </div>
+        <div class="col-2">
+            <img src="images/image1.png">
+         </div>
+    </div>
+</div>
+</div>
+
+<!-----Featured Categories-------->
+      <div class="categories">
+          <div class="small-container">
+          <div class="row">
+              <div class="col-3">
+                  <img src="images/quote1.jpg">
+              </div>
+              <div class="col-3">
+                <img src="images/quote2.jpg">
+              </div>
+              <div class="col-3">
+                <img src="images/quote3.jpg">
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <!-----Featured Products-------->
+          <div class="small-container">
+              <h2 class="title">Courses</h2>
+              <div class="row">
+                  <div class="col-4">
+                     <img src="images/maths.jpg"></a>
+                    <h4>Mathematics<br>JOHN STILLWELL</h4></a>
+                      <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                      </div>
+                      <p><del>$75.00</del></p>
+                      <p>$50.00</p>
+                  </div>
+                  <div class="col-4">
+                    <img src="images/bio.jpg">
+                    <h4>Biology <br> ROBERT STEEV</h4>
+                    <div class="rating">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star-half-o"></i>
+                      <i class="fa fa-star-o"></i>
+                    </div>
+                    <p><del>$90.00</del></p>
+                    <p>$59.99</p>
+                </div> <div class="col-4">
+                    <img src="images/engineering.jpg">
+                    <h4>G.Engineering <br>MICHEAL CLARK</h4>
+                    <div class="rating">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p><del>$70.00</del></p>
+                    <p>$45.00</p>
+                </div> <div class="col-4">
+                    <img src="images/chemistry.jpg">
+                    <h4>Chemistry <br> JAMES STARC</h4>
+                    <div class="rating">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star-o"></i>
+                    </div>
+                    <p><del>$120.00</del></p>
+                    <p>$99.99</p>
+                </div>
+              </div>
+              <h2 class="title">Upcoming Courses</h2>
+              <div class="row">
+                <div class="col-4">
+                    <img src="images/socialmedia.jpg">
+                    <h4>Social Media Marketing</h4>
+                    <div class="rating">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>Available soon</p>
+                </div>
+                <div class="col-4">
+                  <img src="images/coding.jpg">
+                  <h4>Java Programming</h4>
+                  <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                  </div>
+                  <p>Available Soon</p>
+              </div> <div class="col-4">
+                  <img src="images/IT.jpg">
+                  <h4>Information Technology</h4>
+                  <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                  </div>
+                  <p>Available Soon</p>
+              </div> <div class="col-4">
+                  <img src="images/seo.jpg">
+                  <h4>Search Engine Optimization</h4>
+                  <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                  </div>
+                  <p>Available soon</p>
+              </div>
+              </div>
+
+              <div class="row">
+                <div class="col-4">
+                    <img src="images/hardware.jpg">
+                    <h4>Computer Hardware</h4>
+                    <div class="rating">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>Available Soon</p>
+                </div>
+                <div class="col-4">
+                  <img src="images/networking.jpg">
+                  <h4>Networking</h4>
+                  <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                  </div>
+                  <p>Available Son</p>
+              </div> <div class="col-4">
+                  <img src="images/technical.jpg">
+                  <h4>Technical Writing</h4>
+                  <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                  </div>
+                  <p>Available Soon</p>
+              </div> <div class="col-4">
+                  <img src="images/datascience.jpg">
+                  <h4>Date Science</h4>
+                  <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                  </div>
+                  <p>Available Soon</p>
+              </div>
+          </div>
+          </div>
+          <!-----Offer-------->
+             <div class="offer">
+               <div class="small-container">
+                 <div class="row">
+                   <div class="col-2">
+                           <img src="images/image1.png" class="offer-img">
+                   </div>
+                   <div class="col-2">
+                     <p>Sami bat suno</p>
+                     <h1>bat suno sami </h1>
+                     <small>Yaha acha sa content add Krdena thk he??. <br> 
+                    yaha bhi or dekh lio kahi bhool jaoo</small>
+                      
+                  </div>
+                 </div>
+               </div>
+             </div>
+
+             <!------Testimonials---------->
+             <div class="testimonials">
+               <div class="small-container">
+                 <div class="row">
+                   <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <h3>Web Developer</h3>
+                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. lorem
+                       Ipsum has been the industry's standard dummy text ever.</p>
+                       <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                      </div>
+                      <img src="images/wahab.jpg">
+                      <h3>Abdul Wahab MANHOOS</h3>
+                   </div>
+                   <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <h3>Web Designer</h5>
+                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. lorem
+                       Ipsum has been the industry's standard dummy text ever.</p>
+                       <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                      </div>
+                      <img src="images/sami.jpg">
+                      <h3>Sami shaikh MOTA </h3>
+                   </div>
+                   <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <h3>Project Manager</h3>
+                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. lorem
+                       Ipsum has been the industry's standard dummy text ever.</p>
+                       <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                      </div>
+                      <img src="images/farrukh.JPG">
+                      <h3>Farrukh shehzad LANGRA</h3>
+                   </div>
+                 </div>
+               </div>
+             </div>
+
+          <!-----Brands---->
+        <div class="brands">
+          <div class="small-container">
+            <div class="row">
+             
+              <div class="col-5">
+                <img src="images/logo-oppo.png">
+              </div>
+              
+              <div class="col-5">
+                <img src="images/logo-paypal.png">
+              </div>
+              <div class="col-5">
+                <img src="images/logo-philips.png">
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div>
+         
+        
+        
+        
+        
+        
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+         <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col-1">
+              <h3>Download Our App</h3>
+              <p>Download App for Android and Ios Mobile Phone</p>
+              <div class="app-logo">
+                <img src="images/play-store.png">
+                <img src="images/app-store.png">
+              </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/image1.png">
+              <p>Our Purpose Is to Sustainably Make the Plesure and benefits of sports
+                Accesssible to the many.
+              </p>
+            </div>
+            <div class="footer-col-3">
+              <h3>Useful Links</h3>
+              <ul>
+                <li>Coupons</li>
+                <li>Blog post</li>
+                <li>Return Policy</li>
+                <li>Join Affiliate</li>
+              </ul>
+            </div>
+            <div class="footer-col-4">
+              <h3>Follow US</h3>
+              <ul>
+                <li>Facebbok</li>
+                <li>Intagram</li>
+                <li>Youtube</li>
+                <li>Twitter</li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+          <p class="copyright">Copyright 2021 - sami Shaikh</p>
+        </div>
+      </div>
+     
+       
+    </form>
+ <script>
+     var MenuItems = document.getElementById("MenuItems");
+
+     MenuItems.style.maxHeight = "0px";
+
+     function menutoggle() {
+         if (MenuItems.style.maxHeight == "0px") {
+             MenuItems.style.maxHeight = "200px";
+         }
+         else {
+             MenuItems.style.maxHeight = "0px";
+         }
+
+
+     }
+ </script>
+</body>
+</html>
