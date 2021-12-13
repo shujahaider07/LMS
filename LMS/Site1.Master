@@ -32,7 +32,13 @@
                 <li><a href="about.aspx">About</a></li>
                 <li><a href="courses.aspx">Courses</a></li>
                 <li><a href="registration.aspx">Registration</a></li>
-                <li><a href="Portal.aspx">Portal</a></li>
+                <%--<li><a href="Portal.aspx">Portal</a></li>--%>
+                <li><a href="Portal.aspx">LOGOUT</a></li>
+                <div>
+                    <a class ="dropdown-item" href="Portal.aspx"></a>
+                    <a class="nav-link dropdown-toggle" id="userdropdown" 
+                </div>
+
              
             </ul>
         </nav>

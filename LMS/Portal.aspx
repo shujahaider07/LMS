@@ -19,11 +19,14 @@
             <h1 style="color: linear-gradient(top to, green,yellow);">LOGIN PORTAL</h1>
             <p>USERNAME</p>
             
-          
-            <asp:TextBox ID="pusername" placeholder="Enter your Username" runat="server"></asp:TextBox>
+            <asp:DropDownList ID="DropDownList1" runat="server">
+                <asp:ListItem Selected="True">ADMIN</asp:ListItem>
+                <asp:ListItem>STUDENT</asp:ListItem>
+            </asp:DropDownList><br><br>
+            <asp:TextBox ID="pusername" placeholder="Enter your Username" ForeColor="Black" BackColor="White" runat="server"></asp:TextBox>
             
             <br>
-            <asp:TextBox ID="Ppassword" TextMode="Password" placeholder="Enter your Password" runat="server"></asp:TextBox>
+            <asp:TextBox ID="Ppassword" TextMode="Password" placeholder="Enter your Password" ForeColor="Black" BackColor="White" runat="server"></asp:TextBox>
 
             <a href="#">Forget Password</a>
           <br>
