@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="courses.aspx.cs" Inherits="LMS.courses" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AdminCoursesView.aspx.cs" Inherits="LMS.AdminCoursesView" %>
 
 <!DOCTYPE html>
 
@@ -21,9 +21,9 @@
         </div>
         <nav>
             <ul id="MenuItems">
-                <li><a href="index.aspx">Home</a></li>
-                <li><a href="about.aspx">About</a></li>
-                <li><a href="courses.aspx">Courses</a></li>
+                <%--<li><a href="index.aspx">Home</a></li>--%>
+                <%--<li><a href="about.aspx">About</a></li>--%>
+                <%--<li><a href="courses.aspx">Courses</a></li>--%>
                 <%--<li><a href="Registration.aspx">Registration</a></li>--%>
                 <li><a href="portal.aspx">Portal</a></li>
             </ul>
@@ -61,6 +61,7 @@
                     <p>$80.00</p>
                 </div> <div class="col-4">
                     <img src="images/chemistry.jpg">
+                     <li><a href="ChemistryUpload.aspx">ClICK HERE</a></li>
                     <h4>Chemistry</h4>
                     <div class="rating">
                       <i class="fa fa-star"></i>
@@ -72,7 +73,7 @@
                     <p>$55.00</p>
                 </div> <div class="col-4">
                     <img src="images/hardware.jpg"  >
-                     <li><a href="CoursesShow.aspx" >ClICK HERE</a></li>
+                     <li><a href="Upload.aspx" >ClICK HERE</a></li>
                     <h4>Hardware</h4>
                     <div class="rating">
                       <i class="fa fa-star"></i>

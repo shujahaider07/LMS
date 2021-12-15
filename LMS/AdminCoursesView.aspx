@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="courses.aspx.cs" Inherits="LMS.courses" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AdminCoursesView.aspx.cs" Inherits="LMS.AdminCoursesView" %>
 
 <!DOCTYPE html>
 
@@ -21,8 +21,8 @@
         </div>
         <nav>
             <ul id="MenuItems">
-                <li><a href="index.aspx">Home</a></li>
-                <li><a href="about.aspx">About</a></li>
+                <%--<li><a href="index.aspx">Home</a></li>--%>
+                <%--<li><a href="about.aspx">About</a></li>--%>
                 <li><a href="courses.aspx">Courses</a></li>
                 <%--<li><a href="Registration.aspx">Registration</a></li>--%>
                 <li><a href="portal.aspx">Portal</a></li>

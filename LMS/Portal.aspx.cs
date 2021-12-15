@@ -48,6 +48,11 @@ namespace LMS
                         Response.Redirect("AdminDashboard.aspx");
 
                     }
+                    else
+                    {
+                        Response.Write("<Script>alert('INCORRECT PRIVILEGES')</script>");
+
+                    }
                 }
 
                 if (DropDownList1.SelectedIndex == 1)
@@ -58,21 +63,27 @@ namespace LMS
                     userType = dt.Rows[0][3].ToString().Trim();
 
                     {
-                        Response.Write(Session["username"] = dt.Rows[0][3].ToString());
+                        if (userType == "u")
+                        {
+                            Response.Write(Session["username"] = dt.Rows[0][3].ToString());
 
 
-                        Session["username"] = pusername.Text;
-                        Response.Redirect("index.aspx");
+                            Session["username"] = pusername.Text;
+                            Response.Redirect("index.aspx");
+
+                        }
+                        else
+                        {
+                            Response.Write("<Script>alert('INCORRECT PRIVILEGES')</script>");
+                        }
 
                     }
+                    
 
                     sql.Close();
 
                 }
-                else
-                {
-                    Response.Write("<Script>alert('INCORRECT PRIVILEGES')</script>");
-                }
+             
 
             }
         }

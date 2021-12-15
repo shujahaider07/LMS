@@ -34,12 +34,13 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Courses</a>
+                            <a class="nav-link" href="AdminCoursesView.aspx">CoursesView</a>
                         </li>
                      
-                      
                         <li class="nav-item">
-                            <a class="nav-link" href="Upload.aspx">lec</a>
+                            <a class="nav-link" href="AdminCourseUpload.aspx">Upload Lectures</a>
+                        </li><li class="nav-item">
+                            <a class="nav-link" href="Portal.aspx">Portal</a>
                         </li>
                         <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"

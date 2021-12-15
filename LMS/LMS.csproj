@@ -68,7 +68,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="about.aspx" />
+    <Content Include="AdminCoursesView.aspx" />
+    <Content Include="AdminCourseUpload.aspx" />
     <Content Include="AdminDashBoard.aspx" />
+    <Content Include="ChemistryUpload.aspx" />
     <Content Include="courses.aspx" />
     <Content Include="CoursesShow.aspx" />
     <Content Include="Portal.aspx" />
@@ -85,12 +88,33 @@
     <Compile Include="about.aspx.designer.cs">
       <DependentUpon>about.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AdminCoursesView.aspx.cs">
+      <DependentUpon>AdminCoursesView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCoursesView.aspx.designer.cs">
+      <DependentUpon>AdminCoursesView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCourseUpload.aspx.cs">
+      <DependentUpon>AdminCourseUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCourseUpload.aspx.designer.cs">
+      <DependentUpon>AdminCourseUpload.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AdminDashBoard.aspx.cs">
       <DependentUpon>AdminDashBoard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="AdminDashBoard.aspx.designer.cs">
       <DependentUpon>AdminDashBoard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChemistryUpload.aspx.cs">
+      <DependentUpon>ChemistryUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChemistryUpload.aspx.designer.cs">
+      <DependentUpon>ChemistryUpload.aspx</DependentUpon>
     </Compile>
     <Compile Include="courses.aspx.cs">
       <DependentUpon>courses.aspx</DependentUpon>

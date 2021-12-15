@@ -25,7 +25,7 @@
               <li><a href="index.aspx">Home</a></li>
               <li><a href="about.aspx">About</a></li>
               <li><a href="courses.aspx">Courses</a></li>
-              <li><a href="registration.aspx">Registration</a></li>
+              <%--<li><a href="registration.aspx">Registration</a></li>--%>
               <li><a href="Portal.aspx">Portal</a></li>
            
             </ul>
