@@ -5,32 +5,16 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.IO;
-using System.Data;
-using System.Configuration;
 using System.Data.SqlClient;
+using System.Configuration;
+using System.Data;
 
 namespace LMS
 {
-    public partial class Upload : System.Web.UI.Page
+    public partial class CoursesShow : System.Web.UI.Page
     {
         string cs = ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString;
         protected void Page_Load(object sender, EventArgs e)
-        {
-            
-
-        }
-
-        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void GridView1_SelectedIndexChanged1(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void Button1_Click(object sender, EventArgs e)
         {
             if (FileUpload1.HasFile)
             {
@@ -38,25 +22,32 @@ namespace LMS
 
             }
 
-
+            SqlConnection sql = new SqlConnection(cs);
+            sql.Open();
             DataTable dt = new DataTable();
             dt.Columns.Add("File", typeof(string));
             dt.Columns.Add("Size", typeof(string));
             dt.Columns.Add("type", typeof(string));
             dt.Columns.Add("Date", typeof(string));
 
+
             foreach (string strFile in Directory.GetFiles(Server.MapPath("~/Data/")))
             {
+               
                 FileInfo fi = new FileInfo(strFile);
                 dt.Rows.Add(fi.Name, fi.Length, fi.Extension,fi.CreationTimeUtc);
 
             }
             GridView1.DataSource = dt;
             GridView1.DataBind();
+
+
+            sql.Close();
         }
 
         protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)
         {
+
             if (e.CommandName == "Download")
             {
                 Response.Clear();
@@ -65,15 +56,6 @@ namespace LMS
                 Response.TransmitFile(Server.MapPath("~/Data/") + e.CommandArgument);
                 Response.End();
             }
-
-
-        }
-
-        protected void Button2_Click(object sender, EventArgs e)
-        {
-          
-
-               
         }
     }
 }

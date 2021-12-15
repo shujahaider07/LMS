@@ -71,7 +71,8 @@
                     </div>
                     <p>$55.00</p>
                 </div> <div class="col-4">
-                    <img src="images/hardware.jpg">
+                    <img src="images/hardware.jpg"  >
+                     <li><a href="CoursesShow.aspx" >ClICK HERE</a></li>
                     <h4>Hardware</h4>
                     <div class="rating">
                       <i class="fa fa-star"></i>

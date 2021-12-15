@@ -32,13 +32,10 @@
                 <li><a href="about.aspx">About</a></li>
                 <li><a href="courses.aspx">Courses</a></li>
                 <li><a href="registration.aspx">Registration</a></li>
-                <%--<li><a href="Portal.aspx">Portal</a></li>--%>
                 <li><a href="Portal.aspx">LOGOUT</a></li>
-                <div>
-                    <a class ="dropdown-item" href="Portal.aspx"></a>
-                    <a class="nav-link dropdown-toggle" id="userdropdown" 
-                </div>
+            
 
+                
              
             </ul>
         </nav>
@@ -81,7 +78,7 @@
               <div class="row">
                   <div class="col-4">
                      <img src="images/maths.jpg"></a>
-                    <h4>Mathematics<br>JOHN STILLWELL</h4></a>
+                    <h4>TECHNICAL WRITING<br>JOHN STILLWELL</h4></a>
                       <div class="rating">
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -94,7 +91,7 @@
                   </div>
                   <div class="col-4">
                     <img src="images/bio.jpg">
-                    <h4>Biology <br> ROBERT STEEV</h4>
+                    <h4>Biology<br> ROBERT STEEV</h4>
                     <div class="rating">
                       <i class="fa fa-star"></i>
                       <i class="fa fa-star"></i>

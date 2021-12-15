@@ -7,12 +7,10 @@ using System.Web.UI.WebControls;
 
 namespace LMS
 {
-    public partial class Site1 : System.Web.UI.MasterPage
+    public partial class AdminDashBoard : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
-
 
         }
     }
