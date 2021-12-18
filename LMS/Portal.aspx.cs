@@ -20,12 +20,14 @@ namespace LMS
         protected void Page_Load(object sender, EventArgs e)
         {
             pusername.Focus();
+           
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
             SqlConnection sql = new SqlConnection(cs);
             sql.Open();
+
 
             string qry = "select * from login where username = @name and password = @pass";
             SqlCommand cmd = new SqlCommand(qry, sql);
@@ -42,6 +44,9 @@ namespace LMS
                     userType = dt.Rows[0][3].ToString().Trim();
                     if (userType == "a")
                     {
+                        Session["Userid"] = dt.Rows[0]["id"].ToString();
+
+                        Session["username"] = pusername;
                         Response.Write(Session["username"] = dt.Rows[0][3].ToString());
 
                         Session["username"] = pusername.Text;
@@ -51,6 +56,7 @@ namespace LMS
                     else
                     {
                         Response.Write("<Script>alert('INCORRECT PRIVILEGES')</script>");
+                       ScriptManager.RegisterStartupScript(this, GetType(),"Popup", "Swal.fire('Any fool can use a computer')",true);
 
                     }
                 }
@@ -65,21 +71,25 @@ namespace LMS
                     {
                         if (userType == "u")
                         {
+                           
                             Response.Write(Session["username"] = dt.Rows[0][3].ToString());
 
-
+                            Session["Userid"] = dt.Rows[0]["id"].ToString();
                             Session["username"] = pusername.Text;
                             Response.Redirect("index.aspx");
 
                         }
                         else
                         {
+                            //ScriptManager.RegisterStartupScript(this, GetType(), "Popup", "Swal.fire('Good job!','You clicked the button!','success')", true);
+
                             Response.Write("<Script>alert('INCORRECT PRIVILEGES')</script>");
+                       
                         }
 
                     }
                     
-
+                    
                     sql.Close();
 
                 }

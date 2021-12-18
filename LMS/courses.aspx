@@ -46,10 +46,11 @@
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star-o"></i>
                       </div>
-                      <p>$70.00</p>
+                   
                   </div>
                   <div class="col-4">
                     <img src="images/bio.jpg">
+                           <li><a href="BiologyShow.aspx" >ClICK HERE</a></li>
                     <h4>Biology</h4>
                     <div class="rating">
                       <i class="fa fa-star"></i>
@@ -58,9 +59,10 @@
                       <i class="fa fa-star-half-o"></i>
                       <i class="fa fa-star-o"></i>
                     </div>
-                    <p>$80.00</p>
+                   
                 </div> <div class="col-4">
                     <img src="images/chemistry.jpg">
+                     <li><a href="ChemistryShow.aspx" >ClICK HERE</a></li>
                     <h4>Chemistry</h4>
                     <div class="rating">
                       <i class="fa fa-star"></i>
@@ -69,7 +71,7 @@
                       <i class="fa fa-star"></i>
                       <i class="fa fa-star-half-o"></i>
                     </div>
-                    <p>$55.00</p>
+                  
                 </div> <div class="col-4">
                     <img src="images/hardware.jpg"  >
                      <li><a href="CoursesShow.aspx" >ClICK HERE</a></li>
@@ -81,7 +83,7 @@
                       <i class="fa fa-star"></i>
                       <i class="fa fa-star-o"></i>
                     </div>
-                    <p>$45.00</p>
+                   
                 </div>
               </div>
               
@@ -96,7 +98,7 @@
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star-o"></i>
                       </div>
-                      <p>$70.00</p>
+                     
                   </div>
                   <div class="col-4">
                     <img src="images/engineering.jpg">
@@ -108,7 +110,7 @@
                       <i class="fa fa-star-half-o"></i>
                       <i class="fa fa-star-o"></i>
                     </div>
-                    <p>$50.00</p>
+                   
                 </div> <div class="col-4">
                     <img src="images/IT.jpg">
                     <h4>Information Technology</h4>
@@ -119,7 +121,7 @@
                       <i class="fa fa-star"></i>
                       <i class="fa fa-star-half-o"></i>
                     </div>
-                    <p>$90.00</p>
+                  
                 </div> <div class="col-4">
                     <img src="images/networking.jpg">
                     <h4>Networking</h4>
@@ -130,7 +132,7 @@
                       <i class="fa fa-star"></i>
                       <i class="fa fa-star-o"></i>
                     </div>
-                    <p>$40.00</p>
+                   
                 </div>
                 </div>
   
@@ -145,7 +147,7 @@
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star-o"></i>
                       </div>
-                      <p>$50.00</p>
+                    
                   </div>
                   <div class="col-4">
                     <img src="images/maths.jpg">
@@ -157,7 +159,7 @@
                       <i class="fa fa-star-half-o"></i>
                       <i class="fa fa-star-o"></i>
                     </div>
-                    <p>$55.00</p>
+                 
                 </div> <div class="col-4">
                     <img src="images/socialmedia.jpg">
                     <h4>Social Media</h4>
@@ -168,7 +170,7 @@
                       <i class="fa fa-star"></i>
                       <i class="fa fa-star-half-o"></i>
                     </div>
-                    <p>$30.00</p>
+                   
                 </div> <div class="col-4">
                     <img src="images/coding.jpg">
                     <h4>Back-End</h4>
@@ -179,7 +181,7 @@
                       <i class="fa fa-star"></i>
                       <i class="fa fa-star-o"></i>
                     </div>
-                    <p>$65.00</p>
+                  
                 </div>
               </div>
 

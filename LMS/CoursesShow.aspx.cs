@@ -35,7 +35,7 @@ namespace LMS
             {
                
                 FileInfo fi = new FileInfo(strFile);
-                dt.Rows.Add(fi.Name, fi.Length, fi.Extension,fi.CreationTimeUtc);
+                dt.Rows.Add(fi.Name, fi.Length, fi.Extension, fi.LastAccessTime);
 
             }
             GridView1.DataSource = dt;

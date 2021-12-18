@@ -70,15 +70,25 @@
     <Content Include="about.aspx" />
     <Content Include="AdminCoursesView.aspx" />
     <Content Include="AdminCourseUpload.aspx" />
-    <Content Include="AdminDashBoard.aspx" />
+    <Content Include="AdminDashboard.aspx" />
+    <Content Include="BiologyShow.aspx" />
+    <Content Include="BiologyUpload.aspx" />
+    <Content Include="ChemistryShow.aspx" />
     <Content Include="ChemistryUpload.aspx" />
     <Content Include="courses.aspx" />
     <Content Include="CoursesShow.aspx" />
+    <Content Include="CSS\Upload.css" />
+    <Content Include="dist\sweetalert2.all.js" />
+    <Content Include="dist\sweetalert2.all.min.js" />
+    <Content Include="dist\sweetalert2.css" />
+    <Content Include="dist\sweetalert2.js" />
+    <Content Include="dist\sweetalert2.min.css" />
+    <Content Include="dist\sweetalert2.min.js" />
     <Content Include="Portal.aspx" />
     <Content Include="Registration.aspx" />
     <Content Include="Upload.aspx" />
     <Content Include="Web.config" />
-    <Content Include="Index.aspx" />
+    <Content Include="index.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="about.aspx.cs">
@@ -102,12 +112,33 @@
     <Compile Include="AdminCourseUpload.aspx.designer.cs">
       <DependentUpon>AdminCourseUpload.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AdminDashBoard.aspx.cs">
-      <DependentUpon>AdminDashBoard.aspx</DependentUpon>
+    <Compile Include="AdminDashboard.aspx.cs">
+      <DependentUpon>AdminDashboard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AdminDashBoard.aspx.designer.cs">
-      <DependentUpon>AdminDashBoard.aspx</DependentUpon>
+    <Compile Include="AdminDashboard.aspx.designer.cs">
+      <DependentUpon>AdminDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BiologyShow.aspx.cs">
+      <DependentUpon>BiologyShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BiologyShow.aspx.designer.cs">
+      <DependentUpon>BiologyShow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BiologyUpload.aspx.cs">
+      <DependentUpon>BiologyUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BiologyUpload.aspx.designer.cs">
+      <DependentUpon>BiologyUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChemistryShow.aspx.cs">
+      <DependentUpon>ChemistryShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChemistryShow.aspx.designer.cs">
+      <DependentUpon>ChemistryShow.aspx</DependentUpon>
     </Compile>
     <Compile Include="ChemistryUpload.aspx.cs">
       <DependentUpon>ChemistryUpload.aspx</DependentUpon>
@@ -152,12 +183,12 @@
     <Compile Include="Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
     </Compile>
-    <Compile Include="Index.aspx.cs">
-      <DependentUpon>Index.aspx</DependentUpon>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Index.aspx.designer.cs">
-      <DependentUpon>Index.aspx</DependentUpon>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Upload.aspx.cs">
       <DependentUpon>Upload.aspx</DependentUpon>
@@ -178,6 +209,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="BiologyUpload\" />
     <Folder Include="ChemistryData\" />
     <Folder Include="Data\" />
   </ItemGroup>

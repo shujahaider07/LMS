@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
 
 
 
@@ -28,12 +29,16 @@
         </div>
         <nav>
             <ul id="MenuItems">
-                <li><a href="index.aspx">Home</a></li>
-                <li><a href="about.aspx">About</a></li>
-                <li><a href="courses.aspx">Courses</a></li>
+                <li><b></b><a href="index.aspx">Home</a></li>
+                <li><b></b><a href="about.aspx">About</a></li>
+                <li><b></b><a href="courses.aspx">Courses</a></li>
                <%--<li><a href="registration.aspx">Registration</a></li>--%>
                 <li><a href="Portal.aspx">LOGOUT</a></li>
-            
+                <li class="nav-item">
+
+                 <%--< <i class="fas fa-video">--%> 
+                 <a class="nav-link"  > <%Response.Write(Session["username"]);%></i>
+                 </li>
 
                 
              

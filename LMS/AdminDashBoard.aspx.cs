@@ -7,11 +7,24 @@ using System.Web.UI.WebControls;
 
 namespace LMS
 {
-    public partial class AdminDashBoard : System.Web.UI.Page
+    public partial class AdminDashboard : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["Userid"] == null)
+            {
+                Response.Redirect("Portal.aspx");
+
+            }
+             
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Session["Userid"] = null;
+
+            Response.Redirect("Portal.aspx");
 
         }
     }
-}
+    }

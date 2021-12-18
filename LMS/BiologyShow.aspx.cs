@@ -11,13 +11,13 @@ using System.Data.SqlClient;
 
 namespace LMS
 {
-    public partial class ChemistryUpload : System.Web.UI.Page
+    public partial class BiologyShow : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             if (FileUpload1.HasFile)
             {
-                FileUpload1.PostedFile.SaveAs(Server.MapPath("~/ChemistryData/") + FileUpload1.FileName);
+                FileUpload1.PostedFile.SaveAs(Server.MapPath("~/BiologyUpload/") + FileUpload1.FileName);
 
             }
 
@@ -28,7 +28,7 @@ namespace LMS
             dt.Columns.Add("type", typeof(string));
             dt.Columns.Add("Date", typeof(string));
 
-            foreach (string strFile in Directory.GetFiles(Server.MapPath("~/ChemistryData/")))
+            foreach (string strFile in Directory.GetFiles(Server.MapPath("~/BiologyUpload/")))
             {
                 FileInfo fi = new FileInfo(strFile);
                 dt.Rows.Add(fi.Name, fi.Length, fi.Extension, fi.LastAccessTime);
@@ -38,11 +38,6 @@ namespace LMS
             GridView1.DataBind();
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)
         {
             if (e.CommandName == "Download")
@@ -50,20 +45,9 @@ namespace LMS
                 Response.Clear();
                 Response.ContentType = "application/octent-stream";
                 Response.AppendHeader("content-disposition", "filename=" + e.CommandArgument);
-                Response.TransmitFile(Server.MapPath("~/ChemistryData/") + e.CommandArgument);
+                Response.TransmitFile(Server.MapPath("~/BiologyUpload/") + e.CommandArgument);
                 Response.End();
             }
         }
-
-        // The id parameter name should match the DataKeyNames value set on the control
-        public void GridView1_DeleteItem(int id)
-        {
-          
-        }
-
-        protected void GridView1_RowDeleting(object sender, GridViewDeleteEventArgs e)
-        {
-            
-        }
     }
-    }
+}

@@ -9,9 +9,10 @@ using System.Data;
 using System.Configuration;
 using System.Data.SqlClient;
 
+
 namespace LMS
 {
-    public partial class ChemistryUpload : System.Web.UI.Page
+    public partial class ChemistryShow : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -38,11 +39,6 @@ namespace LMS
             GridView1.DataBind();
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)
         {
             if (e.CommandName == "Download")
@@ -53,17 +49,6 @@ namespace LMS
                 Response.TransmitFile(Server.MapPath("~/ChemistryData/") + e.CommandArgument);
                 Response.End();
             }
-        }
-
-        // The id parameter name should match the DataKeyNames value set on the control
-        public void GridView1_DeleteItem(int id)
-        {
-          
-        }
-
-        protected void GridView1_RowDeleting(object sender, GridViewDeleteEventArgs e)
-        {
-            
         }
     }
     }
